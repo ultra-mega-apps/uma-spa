@@ -2,10 +2,6 @@ FROM nginx
 
 MAINTAINER Stepan Mazurov <stepan@socialengine.com>
 
-# This tool converts env vars into json to be injected into the config
-ADD https://s3.amazonaws.com/se-com-docs/bins/json_env /usr/local/bin/
-RUN chmod +x /usr/local/bin/json_env
-
 # Do not start daemon for nginx
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
