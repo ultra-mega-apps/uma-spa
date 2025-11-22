@@ -1,6 +1,7 @@
 FROM nginx
 
-MAINTAINER Stepan Mazurov <stepan@socialengine.com>
+LABEL author="Fernando Guimaraes <ferando@ultra-mega-apps.com>"
+LABEL forked_from="Stepan Mazurov <stepan@socialengine.com>"
 
 # Do not start daemon for nginx
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
