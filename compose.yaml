@@ -1,0 +1,9 @@
+services:
+  uma-spa:
+    image: uma-spa:1.0.0
+    build:
+      dockerfile: Dockerfile
+      x-bake:
+      platforms:
+        - linux/amd64
+        - linux/arm64
