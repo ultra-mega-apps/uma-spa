@@ -42,7 +42,7 @@ This is very useful in case your API is on a different domain, or if you want to
 
 ```bash
 $ docker run -e RAVEN_DSN=yourkey -e API_URL=http://myapi.example.com  \
-  -e CONFIG_VARS=API_URL,RAVEN_DSN -p 8000:80 socialengine/nginx-spa:latest
+  -e CONFIG_VARS=API_URL,RAVEN_DSN -p 8000:80 umapps/spa:1.0.0
  ==> Writing /app/config.js with {"RAVEN_DSN":"yourkey", "API_URL":"http://myapi.example.com"}
 ```
 

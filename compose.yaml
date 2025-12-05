@@ -1,6 +1,6 @@
 services:
   uma-spa:
-    image: umapps/spa:1.0.0
+    image: umapps/spa:dev
     build:
       dockerfile: Dockerfile
       x-bake:
